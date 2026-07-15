@@ -1,3 +1,11 @@
+Plantilla para bitacoras de trabajo:
+Fecha:
+Actividad:
+Resultado:
+Problemas:
+Solución:
+Pendientes:
+
 Daniel Jimenez:
 Fecha: 14/07/26
 Actividad: Creacion de la carpeta y documentacion del proyecto
