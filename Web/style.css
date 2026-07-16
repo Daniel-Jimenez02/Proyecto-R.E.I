@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2b2f38;
+  color: #ffffff;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #2b2f38;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 60px;
+}
+
+header h1 {
+  color: #ff6e01;
+  margin: 0;
+}
+
+header h2 {
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Buscador */
+.buscador {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.buscador input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+.buscador button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #ff6e01;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buscador button:hover {
+  background-color: #e65d00;
+}
+
+/* Tarjetas */
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ff6e01;
+  color: #2b2f38;
+  font-weight: bold;
+  padding: 30px;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2b2f38;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .buscador input {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .buscador button {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  header .logo {
+    flex-direction: column;
+  }
+
+  header img {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
