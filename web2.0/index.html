@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REI - Red Educativa Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="brand-lockup">
+          <img class="brand-logo" src="../assets/images/rei.png" alt="Logo REI">
+          <div>
+            <p class="eyebrow">Aula local · ESP32-S3 · sin internet</p>
+            <h1>REI</h1>
+            <p class="brand-name">Red Educativa Inteligente</p>
+          </div>
+        </div>
+        <p class="hero-text">
+          Explora aprendizajes esenciales, descubre datos curiosos y conversa con una IA sencilla que vive dentro del proyecto.
+        </p>
+        <div class="network" aria-label="Datos de conexión">
+          <span>Wi-Fi REI</span>
+          <span>IP 192.168.4.1</span>
+        </div>
+      </div>
+      <div class="hero-gallery" aria-hidden="true">
+        <img class="gallery-card card-space" src="../assets/images/espacio.png" alt="">
+        <img class="gallery-card card-animals" src="../assets/images/animales.png" alt="">
+        <img class="gallery-card card-body" src="../assets/images/cuerpo.png" alt="">
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="topics-panel" aria-label="Áreas de conocimiento">
+        <div class="section-title">
+          <div>
+            <p class="section-kicker">Biblioteca REI</p>
+            <h2>Elige una aventura</h2>
+          </div>
+          <div class="future-areas" aria-label="Áreas futuras">
+            <span>Tecnología</span>
+            <span>Historia</span>
+            <span>Robótica</span>
+            <span>IA</span>
+          </div>
+        </div>
+        <div id="topicGrid" class="topic-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="topicDetail" class="detail-panel" aria-live="polite">
+        <div class="loading">Cargando contenidos locales...</div>
+      </section>
+
+      <section class="ask-panel" aria-label="Preguntas y respuestas">
+        <div class="section-title compact">
+          <div>
+            <p class="section-kicker">IA local</p>
+            <h2>Pregunta y descubre</h2>
+          </div>
+          <span id="aiStatus" class="status-dot">Lista</span>
+        </div>
+        <div class="curriculum-controls" aria-label="Selector de aprendizajes esenciales MEN">
+          <label>
+            <span>Grado</span>
+            <select id="gradeSelect"></select>
+          </label>
+          <label>
+            <span>Área</span>
+            <select id="areaSelect"></select>
+          </label>
+          <label class="learning-select-label">
+            <span>Aprendizaje esencial</span>
+            <select id="learningSelect"></select>
+          </label>
+        </div>
+        <div id="learningInfo" class="learning-info" aria-live="polite"></div>
+        <div id="miniGames" class="mini-games" aria-live="polite"></div>
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+        <form id="askForm" class="ask-form">
+          <input
+            id="questionInput"
+            name="question"
+            type="text"
+            autocomplete="off"
+            placeholder="Escribe tu pregunta por texto"
+            aria-label="Pregunta"
+          >
+          <button type="submit">Preguntar</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
